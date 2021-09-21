@@ -60,6 +60,7 @@ public class Matrix {
         return mult(b, a)[0];
     }
 
+    //multiply row,'a'[row] line by 'b'[col] collum,
     private static double line_times_col(double[][] a, double[][] b, int row, int col)
     {
         double sum = 0;
@@ -83,4 +84,3 @@ public class Matrix {
         return b;
     }
 }
-
