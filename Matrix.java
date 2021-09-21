@@ -42,10 +42,12 @@ public class Matrix {
     //matrix-vector prod
     static double[] mult(double[][] a, double[] x)
     {
-        /*transforming 'b' = {7, 8, 9} in {7
-                                           8,
-                                           9}
-        so 'a' collums will be the same as 'b'*/
+        /*
+        x is converted in an 2d array the
+        transposed  so ex:  {7, 8} =  {7,
+                                       8}
+        'a' collums will be the same as 'b' rows, 
+        then normal matrix mult*/
         double[][] b = transpose(new double[][]{x});
         //converting to unidimensional array
         return transpose(mult(a, b))[0];
